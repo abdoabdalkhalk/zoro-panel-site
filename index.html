@@ -5,75 +5,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoro Hex - Programming Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
 </head>
-<body class="bg-background min-h-screen">
-    <header class="bg-card shadow-sm">
-        <div class="container mx-auto px-8 py-8 max-w-7xl">
-            <nav class="flex flex-col md:flex-row items-center justify-between">
-                <div class="flex items-center space-x-6">
-                    <img src="https://images.unsplash.com/photo-1550439062-609e1531270e" alt="Zoro Hex Logo" class="w-16 h-16 rounded-full">
-                    <h1 class="text-4xl font-bold text-primary">Zoro Hex</h1>
-                </div>
-                <div class="mt-6 md:mt-0">
-                    <ul class="flex space-x-10">
-                        <li><a href="#home" class="text-xl text-foreground hover:text-primary transition-colors">Home</a></li>
-                        <li><a href="#cpp" class="text-xl text-foreground hover:text-primary transition-colors">C++ Programs</a></li>
-                        <li><a href="#csharp" class="text-xl text-foreground hover:text-primary transition-colors">C# Programs</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <main class="container mx-auto px-8 py-12 max-w-7xl">
-        <section id="home" class="mb-16">
-            <div class="bg-card rounded-lg p-12 shadow-sm">
-                <h2 class="text-4xl font-heading mb-6">Welcome to Zoro Hex</h2>
-                <p class="text-xl text-accent mb-8">Hi, I'm a passionate programmer specializing in C++ and C# development. With years of experience in creating efficient and elegant solutions, I offer high-quality programs that solve real-world problems.</p>
+<body class="bg-[#0F172A] min-h-screen relative overflow-x-hidden">
+    <div id="particles-js" class="absolute inset-0 z-0"></div>
+    
+    <div class="relative z-10">
+        <header class="bg-[#1E293B]/80 backdrop-blur-md shadow-lg border-b border-[#334155]">
+            <div class="container mx-auto px-8 py-8 max-w-7xl">
+                <nav class="flex flex-col md:flex-row items-center justify-between">
+                    <div class="flex items-center space-x-6 hover:scale-105 transition-transform duration-300">
+                        <img src="https://images.unsplash.com/photo-1550439062-609e1531270e" alt="Zoro Hex Logo" class="w-16 h-16 rounded-full ring-2 ring-[#60A5FA] animate-pulse">
+                        <h1 class="text-4xl font-bold text-[#60A5FA] animate__animated animate__fadeIn">Zoro Hex</h1>
+                    </div>
+                    <div class="mt-6 md:mt-0">
+                        <ul class="flex space-x-10">
+                            <li><a href="#home" class="text-xl text-gray-300 hover:text-[#60A5FA] transition-all duration-300 hover:scale-110 inline-block">Home</a></li>
+                            <li><a href="#cpp" class="text-xl text-gray-300 hover:text-[#60A5FA] transition-all duration-300 hover:scale-110 inline-block">C++ Programs</a></li>
+                            <li><a href="#csharp" class="text-xl text-gray-300 hover:text-[#60A5FA] transition-all duration-300 hover:scale-110 inline-block">C# Programs</a></li>
+                        </ul>
+                    </div>
+                </nav>
             </div>
-        </section>
+        </header>
 
-        <section id="cpp" class="mb-16">
-            <h2 class="text-3xl font-heading mb-8">C++ Programs</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-card rounded-lg p-8 shadow-sm">
-                    <h3 class="text-2xl font-semibold mb-4">Data Structure Library</h3>
-                    <p class="text-lg text-accent mb-6">Comprehensive collection of optimized data structures with documentation.</p>
-                    <p class="text-2xl text-primary font-bold mb-6">$49.99</p>
-                    <button class="w-full bg-primary text-primary-foreground py-3 rounded hover:bg-opacity-90 transition-colors text-lg">Buy Now</button>
+        <main class="container mx-auto px-8 py-12 max-w-7xl">
+            <section id="home" class="mb-16 animate__animated animate__fadeInUp">
+                <div class="bg-[#1E293B]/80 backdrop-blur-md rounded-lg p-12 shadow-lg border border-[#334155] hover:border-[#60A5FA] transition-colors duration-300">
+                    <h2 class="text-4xl font-heading mb-6 text-[#60A5FA] animate__animated animate__fadeIn">Welcome to Zoro Hex</h2>
+                    <p class="text-xl text-gray-300 mb-8">Hi, I'm a passionate programmer specializing in C++ and C# development. With years of experience in creating efficient and elegant solutions, I offer high-quality programs that solve real-world problems.</p>
                 </div>
-                <div class="bg-card rounded-lg p-8 shadow-sm">
-                    <h3 class="text-2xl font-semibold mb-4">Algorithm Toolkit</h3>
-                    <p class="text-lg text-accent mb-6">Essential algorithms for sorting, searching, and graph operations.</p>
-                    <p class="text-2xl text-primary font-bold mb-6">$39.99</p>
-                    <button class="w-full bg-primary text-primary-foreground py-3 rounded hover:bg-opacity-90 transition-colors text-lg">Buy Now</button>
+            </section>
+
+            <section id="cpp" class="mb-16 animate__animated animate__fadeInUp">
+                <h2 class="text-3xl font-heading mb-8 text-[#60A5FA]">C++ Programs</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-[#1E293B]/80 backdrop-blur-md rounded-lg p-8 shadow-lg border border-[#334155] hover:border-[#60A5FA] transition-all duration-300 hover:scale-105 group">
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-200">Data Structure Library</h3>
+                        <p class="text-lg text-gray-400 mb-6">Comprehensive collection of optimized data structures with documentation.</p>
+                        <p class="text-2xl text-[#60A5FA] font-bold mb-6">$49.99</p>
+                        <button class="w-full bg-[#60A5FA] text-white py-3 rounded hover:bg-[#3B82F6] transition-colors text-lg transform hover:scale-105 duration-300">Buy Now</button>
+                    </div>
+                    <div class="bg-[#1E293B]/80 backdrop-blur-md rounded-lg p-8 shadow-lg border border-[#334155] hover:border-[#60A5FA] transition-all duration-300 hover:scale-105 group">
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-200">Algorithm Toolkit</h3>
+                        <p class="text-lg text-gray-400 mb-6">Essential algorithms for sorting, searching, and graph operations.</p>
+                        <p class="text-2xl text-[#60A5FA] font-bold mb-6">$39.99</p>
+                        <button class="w-full bg-[#60A5FA] text-white py-3 rounded hover:bg-[#3B82F6] transition-colors text-lg transform hover:scale-105 duration-300">Buy Now</button>
+                    </div>
                 </div>
+            </section>
+
+            <section id="csharp" class="mb-16 animate__animated animate__fadeInUp">
+                <h2 class="text-3xl font-heading mb-8 text-[#60A5FA]">C# Programs</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-[#1E293B]/80 backdrop-blur-md rounded-lg p-8 shadow-lg border border-[#334155] hover:border-[#60A5FA] transition-all duration-300 hover:scale-105 group">
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-200">.NET Core API Template</h3>
+                        <p class="text-lg text-gray-400 mb-6">Production-ready API template with authentication and logging.</p>
+                        <p class="text-2xl text-[#60A5FA] font-bold mb-6">$79.99</p>
+                        <button class="w-full bg-[#60A5FA] text-white py-3 rounded hover:bg-[#3B82F6] transition-colors text-lg transform hover:scale-105 duration-300">Buy Now</button>
+                    </div>
+                    <div class="bg-[#1E293B]/80 backdrop-blur-md rounded-lg p-8 shadow-lg border border-[#334155] hover:border-[#60A5FA] transition-all duration-300 hover:scale-105 group">
+                        <h3 class="text-2xl font-semibold mb-4 text-gray-200">WPF Components Bundle</h3>
+                        <p class="text-lg text-gray-400 mb-6">Custom WPF controls and utilities for desktop applications.</p>
+                        <p class="text-2xl text-[#60A5FA] font-bold mb-6">$59.99</p>
+                        <button class="w-full bg-[#60A5FA] text-white py-3 rounded hover:bg-[#3B82F6] transition-colors text-lg transform hover:scale-105 duration-300">Buy Now</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-[#1E293B]/80 backdrop-blur-md py-8 border-t border-[#334155]">
+            <div class="container mx-auto px-8 text-center text-gray-400 text-lg max-w-7xl">
+                <p>© 2024 Zoro Hex. All rights reserved.</p>
             </div>
-        </section>
+        </footer>
+    </div>
 
-        <section id="csharp" class="mb-16">
-            <h2 class="text-3xl font-heading mb-8">C# Programs</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-card rounded-lg p-8 shadow-sm">
-                    <h3 class="text-2xl font-semibold mb-4">.NET Core API Template</h3>
-                    <p class="text-lg text-accent mb-6">Production-ready API template with authentication and logging.</p>
-                    <p class="text-2xl text-primary font-bold mb-6">$79.99</p>
-                    <button class="w-full bg-primary text-primary-foreground py-3 rounded hover:bg-opacity-90 transition-colors text-lg">Buy Now</button>
-                </div>
-                <div class="bg-card rounded-lg p-8 shadow-sm">
-                    <h3 class="text-2xl font-semibold mb-4">WPF Components Bundle</h3>
-                    <p class="text-lg text-accent mb-6">Custom WPF controls and utilities for desktop applications.</p>
-                    <p class="text-2xl text-primary font-bold mb-6">$59.99</p>
-                    <button class="w-full bg-primary text-primary-foreground py-3 rounded hover:bg-opacity-90 transition-colors text-lg">Buy Now</button>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="bg-secondary py-8">
-        <div class="container mx-auto px-8 text-center text-secondary-foreground text-lg max-w-7xl">
-            <p>© 2024 Zoro Hex. All rights reserved.</p>
-        </div>
-    </footer>
+    <script>
+        window.onload = function() {
+            if(typeof particlesJS !== 'undefined') {
+                particlesJS("particles-js", {
+                    "particles": {
+                        "number": {
+                            "value": 80,
+                            "density": {
+                                "enable": true,
+                                "value_area": 800
+                            }
+                        },
+                        "color": {
+                            "value": "#60A5FA"
+                        },
+                        "shape": {
+                            "type": "circle"
+                        },
+                        "opacity": {
+                            "value": 0.5,
+                            "random": false
+                        },
+                        "size": {
+                            "value": 3,
+                            "random": true
+                        },
+                        "line_linked": {
+                            "enable": true,
+                            "distance": 150,
+                            "color": "#60A5FA",
+                            "opacity": 0.4,
+                            "width": 1
+                        },
+                        "move": {
+                            "enable": true,
+                            "speed": 2,
+                            "direction": "none",
+                            "random": false,
+                            "straight": false,
+                            "out_mode": "out",
+                            "bounce": false
+                        }
+                    },
+                    "interactivity": {
+                        "detect_on": "canvas",
+                        "events": {
+                            "onhover": {
+                                "enable": true,
+                                "mode": "repulse"
+                            },
+                            "onclick": {
+                                "enable": true,
+                                "mode": "push"
+                            },
+                            "resize": true
+                        }
+                    },
+                    "retina_detect": true
+                });
+            }
+        }
+    </script>
 </body>
 </html>
